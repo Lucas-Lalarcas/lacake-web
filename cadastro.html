@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style/cadastro.css" />
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <form class="form" onsubmit="return verificar()">
+        <h1>Cadastre-se</h1>
+        <div class="inputs">
+            <div class="h1">
+
+            </div>
+        </div>
+        <div class="inputs">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="inputs">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu Email">
+        </div>
+        <div class="inputs">
+            <label for="pass">Senha</label>
+            <input type="password" nome="pass" id="pass" placeholder="Digite sua senha (minimo 10 caracteres)"
+                maxlength="10">
+            <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho"
+                class="olho">
+        </div>
+
+        <div class="inputs">
+            <label for=cpf>CPf</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite seu cpf">
+        </div>
+        <div class="inputs">
+            <div class="inputs">
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="data" id="data">
+            </div>
+
+
+            <div class="inputs">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone">
+            </div>
+
+            <p class="text-center"> Já tem uma conta ?<a href="login.html" id="signin"> <b>Entrar</b> </a></p>
+
+            <input class="btn-submit" type="submit" value="Cadastre-se">
+    </form>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+* {
+  /** Seta margem e espaçamento como 0 e tira decoração dos textos**/
+  padding: 0;
+  margin: 0;
+  font-family: 'Lora', serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #1e130c, #9a8478);
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  /** Define Tamanho da NAVBAR **/
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  /** Faz com que os links na NAVBAR fiquem um do lado do outro**/
+  display: inline-block;
+  line-height: 56px;
+  margin-left: 50%;
+  margin: 0 5px;
+  align-items: center;
+}
+
+nav ul li a {
+  /**Define Estilo dos links da NAVBAR**/
+  color: white;
+  font-size: 17px;
+  padding: 15px;
+  line-height: 56px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+a.active, a:hover {
+  /**Faz com que ao passar o mouse por cima a cor de fundo do link mude, tambem em link ativo na NAVBAR**/
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-left: 25%;
+  border-radius: 3%;
+  width: 50%;
+  height: 50%;
+}
+
+.form .inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.form .inputs label {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.form .inputs input {
+  width: 31.25em;
+  height: 2.1875em;
+  border-radius: 0.9em;
+}
+
+.form .inputs input:focus {
+  outline: none;
+}
+
+.text-area {
+  width: 27em;
+}
+
+.text-center {
+  font-size: 1.0625em;
+}
+
+.form .btn-submit {
+  background-color: rgb(49, 192, 45);
+  border: none;
+  color: white;
+  border-radius: 1.25em;
+  height: 3rem;
+  width: 11rem;
+  margin-top: 1.5625em;
+  margin-bottom: 0.3125em;
+}
+
+.form .inputs input::placeholder {
+  padding-left: 8px;
+}
+
+label, textarea {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label {
+  display: block;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+footer {
+  /** Tamanho e alinhamento das colunas do rodapé**/
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: auto;
+  background-image: linear-gradient(to bottom right, #4e3030, #a0785d);
+  padding: 2rem;
+}
+
+.footer-coluna {
+  /**Tamanho das colunas do footer**/
+  margin: 0 auto;
+  width: 33%;
+  text-align: center;
+  color: white;
+}
+
+.footer-coluna img {
+  /**Tamanho da imagem do footer**/
+  width: min(10vw, 150px);
+}
+
+.footer-coluna a {
+  /**Tamanho dos links do footer**/
+  text-decoration: none;
+  color: black;
+  border-radius: 1rem;
+  background-color: white;
+  display: block;
+  padding: 5px;
+}
+
+.footer-coluna li {
+  /**Distancia vertical dos links da coluna**/
+  margin-top: 10px;
+}

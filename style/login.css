@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/abackground.jpg");
+  background-size: 70%;
+  background-position: center;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+#pass {
+  padding-right: 20px;
+}
+
+.olho {
+  left: 940px;
+  padding-top: 30px;
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+}
+
+.form {
+  height: 33em;
+  width: 33em;
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.form .inputs label {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.form .inputs input {
+  width: 390px;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 17px;
+  padding-left: 5px;
+}
+
+.form .inputs input::placeholder {
+  padding-left: 8px;
+}
+
+.form .inputs input:focus {
+  outline: none;
+}
+
+.text-center {
+  font-size: 17px;
+}
+
+.form .btn-submit {
+  background-color: rgb(49, 192, 45);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  height: 3rem;
+  width: 11rem;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.form .btn-submit:hover {
+  background: rgb(31, 144, 27);
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.form .btn-submit:focus {
+  outline: none;
+}

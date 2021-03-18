@@ -1,0 +1,390 @@
+* {
+  /* Seta margem e espaçamento como 0 e tira decoração dos textos*/
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  /* Define Tamanho da NAVBAR */
+  height: 56px;
+  width: 100%;
+}
+
+nav ul {
+  /* Define cor e arredondamento da NAVBAR */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+  /* Faz com que os links na NAVBAR fiquem um do lado do outro*/
+  display: inline-block;
+  line-height: 56px;
+  margin-left: 50%;
+  align-items: center;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  /*Define Estilo dos links da NAVBAR*/
+  color: white;
+  font-size: 17px;
+  padding: 15px;
+  line-height: 56px;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}
+
+a.active, a:hover {
+  /*Faz com que ao passar o mouse por cima a cor de fundo do link mude, tambem em link ativo na NAVBAR*/
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  /*Seta o estilo e tamanho do icone de 3 riscos mobile e deixa ele invisivel no desktop*/
+  font-size: 30px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  /*Faz com que o checkbox do menu fique invisvel mas ainda clicavel pelos 3 risquinhos */
+  display: none;
+}
+
+.top {
+  /*Define tamanho da div que tem a logo e a navbar dentro, também seu background*/
+  align-items: center;
+  height: 380px;
+  text-align: center;
+  background-image: url("https://i.imgur.com/HdUUE5J.png");
+  background-size: cover;
+}
+
+#logo {
+  /*Faz com que a logo desktop fique aparente*/
+  display: inline;
+}
+
+#logo-mobile {
+  /*Logo mobile não aparente*/
+  display: none;
+}
+
+.img {
+  /*Posição e tamanho da logo da div TOP*/
+  width: 100%;
+  margin: auto auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  /*Ajustes tecnicos no body do site*/
+  align-items: center;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Sora", sans-serif;
+  background-size: cover;
+}
+
+.content {
+  /*Define Estilo da DIV que contem o centeudo do site*/
+  width: 100%;
+  /*Oq faz essa div subir um pouco para cobrir um pouco da DIV TOP e dar o efeito de sobreposição*/
+  transform: translateY(-50px);
+  height: 100%;
+  text-align: center;
+  background-color: #f6f1f3;
+  padding: 1%;
+  border-radius: 2rem;
+  margin: 0 auto;
+  align-items: center;
+  -webkit-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+}
+
+.box {
+  /*Caixa invisel que serve para posicionar as 4 caixas marrons de conteudo do site*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line2 {
+  display: flex;
+  width: 50%;
+}
+
+.content-box {
+  /*Estilo e posicionamento das 4 caixas marrom do site*/
+  width: 50%;
+  height: auto;
+  background-color: #8a7975;
+  font-size: auto;
+  color: #f6f1f3;
+  padding: 40px 10px;
+  margin: 0 10px;
+  border-radius: 2rem;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.9s;
+  animation-delay: 300ms;
+}
+
+.content-box:hover {
+  /*Cor ao hover no content-box/*/
+  background-color: #4b2e28;
+}
+
+.content-box a {
+  /*Define estilo do botão saiba mais*/
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 16px 32px;
+  border-radius: 2rem;
+  transition: all 1500ms;
+  margin: 25px 0 10px 0;
+  background-color: white;
+  font-size: max(1vw, 16px);
+}
+
+.content-box a:hover {
+  /*Sombra ao passar o mouse em cima do botao saiba mais*/
+  -webkit-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+}
+
+.content-box img {
+  /* Define tamanho da imagem da content-box*/
+  width: min(225px, 50%);
+}
+
+.content-box p {
+  /*Tamanho e posocionamento do texto da content-box*/
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: auto;
+}
+
+.content-box h1 {
+  /*Tamanho e posocionamento do titulo da content-box*/
+  margin-top: 20px;
+  line-height: 80px;
+  font-size: auto;
+}
+
+.download {
+  /* Define tamanho e estilo da div que contem informações para download*/
+  padding: 5%;
+  color: white;
+  border-radius: 2rem;
+  background-image: url("https://i.imgur.com/rNfWIbj.jpg");
+  background-size: cover;
+  margin: 10px 10px;
+  animation-delay: 700ms;
+}
+
+.download h1 {
+  /*Estilo e tamanho do titulo de download*/
+  font-size: 56px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+
+.download p {
+  padding: 20px;
+  font-size: 1rem;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+
+.download a {
+  /*Estilo dos botões de download*/
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 28px;
+  transition: all 1500ms;
+  margin: 25px 0 10px 0;
+}
+
+.download a:hover {
+  -webkit-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
+}
+
+/*Estilo e tamanho individual dos dois botoes de download*/
+
+.boleira {
+  background-color: #8a7975;
+  color: white;
+}
+
+.boleira:hover {
+  background-color: #4b2e28;
+}
+
+.android {
+  background-color: #f6f1f3;
+  color: #0f0f0f;
+}
+
+.android:hover {
+  color: #8a7975;
+}
+
+footer {
+  /* Tamanho e alinhamento das colunas do rodapé*/
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: auto;
+  background-image: linear-gradient(to right, #4e3030, #a0785d);
+  padding: 2rem;
+}
+
+.footer-coluna {
+  /*Tamanho das colunas do footer*/
+  margin: 0 auto;
+  width: 33%;
+  text-align: center;
+  color: white;
+}
+
+.footer-coluna img {
+  /*Tamanho da imagem do footer*/
+  width: min(10vw, 150px);
+}
+
+.footer-coluna a {
+  /*Tamanho dos links do footer*/
+  text-decoration: none;
+  color: black;
+  border-radius: 1rem;
+  background-color: white;
+  display: block;
+  padding: 5px;
+}
+
+.footer-coluna li {
+  /*Distancia vertical dos links da coluna*/
+  margin-top: 10px;
+}
+
+/*Tablet e algumas partes do celular*/
+
+@media (max-width:900px) {
+  /*Faz com que os content-box fiquem alinhados como duas colunas*/
+  .box {
+    display: block
+  }
+  .line2 {
+    width: 100%;
+  }
+  .content-box {
+    margin: 10px 10px
+  }
+  /*Faz a logo mudar para a vesão mobile*/
+  .download a {
+    display: block
+  }
+  .top {
+    background-image: url("https://i.imgur.com/EfOz4bq.png")
+  }
+  #logo {
+    display: none;
+  }
+  #logo-mobile {
+    margin: 0 auto;
+    display: inline;
+    width: 150px;
+  }
+  .checkbtn {
+    display: flex;
+    z-index: 2.0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 0 0 2rem 2rem;
+  }
+  nav ul {
+    z-index: 2;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #4b2e28;
+    border-radius: 0 2rem 2rem 0;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover, a.active {
+    background: none;
+  }
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+@media (max-width:425px) {
+  /*Seta o content-box como uma unica coluna*/
+  .box {
+    display: block
+  }
+  .content-box {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .line2 {
+    display: block
+  }
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation-name: up;
+  animation-duration: 150ms;
+  animation-fill-mode: backwards;
+}
