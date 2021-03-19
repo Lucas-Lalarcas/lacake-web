@@ -135,9 +135,9 @@ body {
   /*Estilo e posicionamento das 4 caixas marrom do site*/
   width: 50%;
   height: auto;
-  background-color: #8a7975;
+  background-color: #6d605d;
   font-size: auto;
-  color: #f6f1f3;
+  color: #ffffff;
   padding: 40px 10px;
   margin: 0 10px;
   border-radius: 2rem;
@@ -236,7 +236,7 @@ body {
 /*Estilo e tamanho individual dos dois botoes de download*/
 
 .boleira {
-  background-color: #8a7975;
+  background-color: #6d605d;
   color: white;
 }
 
