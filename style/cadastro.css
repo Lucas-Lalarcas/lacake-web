@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(../img/abackground.jpg);
+  background-image: url(../img/abackground.webp);
   min-height: 100vh;
   display: flex;
   align-items: center;

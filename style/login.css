@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/abackground.jpg");
+  background-image: url(../img/abackground.webp);
   background-size: 70%;
   background-position: center;
 }
