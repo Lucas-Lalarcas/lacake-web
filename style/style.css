@@ -155,14 +155,14 @@ body {
 .content-box a {
   /*Define estilo do botão saiba mais*/
   text-decoration: none;
-  color: black;
+  color: rgb(56, 52, 52);
   display: block;
-  padding: 16px 32px;
+  padding: 8px 16px;
   border-radius: 2rem;
   transition: all 1500ms;
   margin: 25px 0 10px 0;
   background-color: white;
-  font-size: max(1vw, 16px);
+  font-size: 30px;
 }
 
 .content-box a:hover {

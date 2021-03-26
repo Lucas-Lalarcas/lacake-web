@@ -1,65 +1,49 @@
-@media (max-width:425px) 
-{
-    .download a{display:block}
-
-
-	
-	.top
-	{
-	background-image:url("https://i.imgur.com/EfOz4bq.png")
-
+@media (max-width:425px) {
+	.download a {
+		display: block
 	}
-
-	#logo{
-		display:none;
+	.top {
+		background-image: url(../img/background.webp)
 	}
-
+	#logo {
+		display: none;
+	}
 	#logo-mobile {
-		margin:0 auto;
-		display:inline; 
+		margin: 0 auto;
+		display: inline;
 		width: 150px;
 	}
-
-	
-
-	.box 
-	{
-		display:block
+	.box {
+		display: block
 	}
-
-	.content-box
-	{
-		width:100%;
-		margin:10px auto;
-		
+	.content-box {
+		width: 100%;
+		margin: 10px auto;
 	}
-	.content{
-		width:100%; 
-		text-align:center;
+	.content {
+		width: 100%;
+		text-align: center;
 		justify-content: center;
 	}
-
-    .checkbtn {
-		display:flex;
-		z-index:2.0;
-		background:rgba(0 ,0 ,0 , 0.3);
-		padding:10px;
+	.checkbtn {
+		display: flex;
+		z-index: 2.0;
+		background: rgba(0, 0, 0, 0.3);
+		padding: 10px;
 		border-radius: 0 0 2rem 2rem;
 	}
-	
-	nav ul{
-		z-index:2;
+	nav ul {
+		z-index: 2;
 		position: fixed;
 		width: 50%;
 		height: 100vh;
 		background: #4b2e28;
 		border-radius: 0 2rem 2rem 0;
-		
 		left: -100%;
 		text-align: center;
 		transition: all .5s;
 	}
-	nav ul li{
+	nav ul li {
 		display: block;
 		margin: 50px 0;
 		line-height: 30px;
@@ -69,26 +53,21 @@
 	}
 	a:hover, a.active {
 		background: none;
-		
 	}
-	#check:checked ~ ul {
+	#check:checked~ul {
 		left: 0;
 	}
-	
 }
 
-
 @media (max-width:425px) {
-
-	.container{
+	.container {
 		width: 100%;
-		
 	}
-	.body{
-		background-image: url("./img/abackground.jpg");;
-		
+	.body {
+		background-image: url(../img/abackground.webp);
+		;
 	}
-	.row{
+	.row {
 		width: 100%;
 	}
 }
