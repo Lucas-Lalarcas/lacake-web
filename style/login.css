@@ -75,15 +75,16 @@ body {
 }
 
 .form .btn-submit {
-  background-color: rgb(49, 192, 45);
+  background-color: rgb(124, 68, 42);
   border: none;
   color: white;
   border-radius: 20px;
   height: 3rem;
-  width: 11rem;
+  width: 14rem;
   margin-top: 25px;
   margin-bottom: 5px;
   cursor: pointer;
+  font-size: 25px;
 }
 
 .form .btn-submit:hover {
