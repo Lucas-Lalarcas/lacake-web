@@ -12,7 +12,6 @@
 body {
     margin: 0 auto;
     margin-bottom: 0 auto;
-    background-color: #ffd9a4;
     font-family: PT Sans;
 }
 
@@ -29,7 +28,7 @@ body {
     text-align: center;
     justify-content: center;
     font: 46px Museo;
-    color: white;
+    color: rgb(34, 19, 10);
     text-shadow: 1px 2px #e5bfb0;
     text-transform: uppercase;
     font-weight: 100;
