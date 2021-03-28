@@ -180,7 +180,18 @@ nav {
       
 
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
+  * {
+    padding: 0;
+    list-style: none;
+    vertical-align: baseline;
+    border: 0px;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    outline: 0;
+    font-size: 100%;
+    box-sizing: unset;
+}
 
     body{
         background-size: 100%;
@@ -203,36 +214,58 @@ nav {
     border-radius: 2rem;
     text-transform: uppercase;
   }
-      
-.box{
+   .center{   
+  display: flex;
+    text-align: center;
+    justify-content: center;
+    font: 25px Museo;
+    color: rgb(34, 19, 10);
+    text-shadow: 1px 2px #e5bfb0;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0px 0 0px 0;
+   }
+  .box{
     background: rgb(255, 255, 255);
-    padding: 10px 100px 80px;
+    padding: 40px 80px 80px;
     max-width: 90% !important;
     margin: 0 auto;
     margin-bottom: 5%;
 }
+
   .content {
-    display: flex;
-    align-items: center;
-    
     justify-content: center;
-    
 }
   .content h2 {
-  
-
+    font-size: 2.8em;
+    padding-right: 20px;
   }
   .lore {
-    width: 100%;
+    width: 300%;
 }
 
-.lore .text {
-           
+.img{
+  max-width: 3%;
+  text-align: center;
+  display: none;
+  margin: 0;
+  padding: 0;
 }
+
+footer {
+  /** Tamanho e alinhamento das colunas do rodapé**/
+  width: 95%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: auto;
+  background-image: linear-gradient(to bottom right, #4e3030, #a0785d);
+  padding: 1rem;
+}
+
 }
 
 
-
+/**
 @media (max-width:900px){
     
 .box{
@@ -264,7 +297,9 @@ nav {
     margin: 0px 0 0px 0;
 }
 .content h2 {
-    font-size: 2em;
+    font-size: 2.5em;
+   padding-left: 3px;
 }
 
 }
+//**
