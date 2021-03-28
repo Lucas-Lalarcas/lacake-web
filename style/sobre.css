@@ -3,17 +3,60 @@
     list-style: none;
     vertical-align: baseline;
     border: 0px;
+    font-family: 'Lora', serif;
     text-decoration: none;
     outline: 0;
     font-size: 100%;
-    font-family: inherit;
+    
+    box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
+  background-image: url(../img/abackground.webp);
+ background-size: 80%;
+ background-position: center;
+  justify-content: center;
     margin: 0 auto;
     margin-bottom: 0 auto;
     font-family: PT Sans;
 }
+
+nav {
+    /** Define Tamanho da NAVBAR **/
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul li {
+    /** Faz com que os links na NAVBAR fiquem um do lado do outro**/
+    display: inline-block;
+    line-height: 56px;
+    margin-left: 50%;
+    margin: 0 5px;
+    align-items: center;
+  }
+  
+  nav ul li a {
+    /**Define Estilo dos links da NAVBAR**/
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    line-height: 56px;
+    border-radius: 2rem;
+    text-transform: uppercase;
+  }
+  
+  a.active, a:hover {
+    /**Faz com que ao passar o mouse por cima a cor de fundo do link mude, tambem em link ativo na NAVBAR**/
+    background: rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  
 
 .box {
     background: #fff;
@@ -45,6 +88,7 @@ body {
 
 .content {
     display: flex;
+
 }
 
 .content h2 {
@@ -63,10 +107,7 @@ body {
 }
 
 .lore .text {
-    font-size: 1em;
-    color: #4a2f21;
-    font: 1em Open Sans;
-    text-align: justify;
+           
 }
 
 .img {
@@ -98,4 +139,132 @@ body {
     to {
         opacity: 1;
     }
+}
+     footer {
+        /** Tamanho e alinhamento das colunas do rodapé**/
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        margin-top: auto;
+        background-image: linear-gradient(to bottom right, #4e3030, #a0785d);
+        padding: 2rem;
+      }
+      
+      .footer-coluna {
+        /**Tamanho das colunas do footer**/
+        margin: 0 auto;
+        width: 33%;
+        text-align: center;
+        color: white;
+      }
+      
+      .footer-coluna img {
+        /**Tamanho da imagem do footer**/
+        width: min(10vw, 150px);
+      }
+      
+      .footer-coluna a {
+        /**Tamanho dos links do footer**/
+        text-decoration: none;
+        color: black;
+        border-radius: 1rem;
+        background-color: white;
+        display: block;
+        padding: 5px;
+      }
+      
+      .footer-coluna li {
+        /**Distancia vertical dos links da coluna**/
+        margin-top: 10px;
+      }
+      
+
+
+@media (max-width: 375px) {
+
+    body{
+        background-size: 100%;
+
+    }
+    nav ul li {
+    display: inline-block;
+    justify-content: space-around;
+    line-height: 20px;
+    margin-left: 10%;
+    margin: 0 5px;
+    align-items: center;
+  
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 2px;
+    line-height: 30px;
+    border-radius: 2rem;
+    text-transform: uppercase;
+  }
+      
+.box{
+    background: rgb(255, 0, 0);
+    padding: 10px 100px 80px;
+    max-width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+  .content {
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    
+}
+  .content h2 {
+  
+
+  }
+  .lore {
+    width: 100%;
+}
+
+.lore .text {
+           
+}
+}
+
+
+
+@media (max-width:900px){
+    
+.box{
+    background: rgb(255, 0, 0);
+    padding: 40px 80px 80px;
+    max-width: 90% !important;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  
+    
+}
+
+.img{
+    max-width: 3%;
+    text-align: center;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font: 25px Museo;
+    color: rgb(34, 19, 10);
+    text-shadow: 1px 2px #e5bfb0;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0px 0 0px 0;
+}
+.content h2 {
+    font-size: 2em;
+}
+
 }
