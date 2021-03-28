@@ -205,7 +205,7 @@ nav {
   }
       
 .box{
-    background: rgb(255, 0, 0);
+    background: rgb(255, 255, 255);
     padding: 10px 100px 80px;
     max-width: 90% !important;
     margin: 0 auto;
@@ -236,7 +236,7 @@ nav {
 @media (max-width:900px){
     
 .box{
-    background: rgb(255, 0, 0);
+    background: rgb(255, 255, 255);
     padding: 40px 80px 80px;
     max-width: 90% !important;
     margin: 0 auto;
