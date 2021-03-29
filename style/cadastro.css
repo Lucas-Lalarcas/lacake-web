@@ -22,17 +22,17 @@ body {
   padding: 5px;
 }
 
-#pass {
-  padding-right: 20px;
-}
+/* #pass { */
+  /* padding-right: 20px; */
+/* } */
 
-.olho {
-  left: 58.6em;
-  padding-top: 1.58em;
-  cursor: pointer;
-  position: absolute;
-  width: 37px;
-}
+/* .olho { */
+  /* left: 58.6em; */
+  /* padding-top: 1.58em; */
+  /* cursor: pointer; */
+  /* position: absolute; */
+  /* width: 37px; */
+/* } */
 
 .form {
   height: 45em;
@@ -58,7 +58,7 @@ body {
 
 .form .inputs input {
   width: 350px;
-  height: 35px;
+  height: 37px;
   border-radius: 15px;
   font-size: 17px;
   padding-left: 5px;
@@ -98,4 +98,18 @@ body {
 
 .form .btn-submit:focus {
   outline: none;
+}
+
+@media (max-width: 425px){
+  .form{
+    width: 26em;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 320px){
+  .form .inputs input {
+    width: 300px;
+    height: 35px;
+  }
 }
