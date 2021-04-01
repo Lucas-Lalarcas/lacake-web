@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(../img/abackground.jpg);
+  background-image: url(../img/abackground.webp);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -22,20 +22,20 @@ body {
   padding: 5px;
 }
 
-#pass {
-  padding-right: 20px;
-}
+/* #pass { */
+  /* padding-right: 20px; */
+/* } */
 
-.olho {
-  left: 58.6em;
-  padding-top: 1.58em;
-  cursor: pointer;
-  position: absolute;
-  width: 37px;
-}
+/* .olho { */
+  /* left: 58.6em; */
+  /* padding-top: 1.58em; */
+  /* cursor: pointer; */
+  /* position: absolute; */
+  /* width: 37px; */
+/* } */
 
 .form {
-  height: 44em;
+  height: 45em;
   width: 30em;
   background-color: white;
   border-radius: 40px;
@@ -58,7 +58,7 @@ body {
 
 .form .inputs input {
   width: 350px;
-  height: 35px;
+  height: 37px;
   border-radius: 15px;
   font-size: 17px;
   padding-left: 5px;
@@ -73,17 +73,17 @@ body {
 }
 
 .text-center {
-  font-size: 17px;
+  font-size: 19px;
   text-align: center;
 }
 
 .form .btn-submit {
-  background-color: rgb(99, 36, 36);
+  background-color: rgb(51, 31, 15);
   border: none;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 20px;
-  height: 3rem;
+  height: 5rem;
   width: 11.5rem;
   margin-top: 25px;
   margin-bottom: 5px;
@@ -91,7 +91,7 @@ body {
 }
 
 .form .btn-submit:hover {
-  background: rgb(139, 44, 37);
+  background: rgb(94, 66, 47);
   transition: 0.3s;
   border-radius: 20px;
 }
@@ -100,20 +100,16 @@ body {
   outline: none;
 }
 
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+@media (max-width: 425px){
+  .form{
+    width: 26em;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 320px){
+  .form .inputs input {
+    width: 300px;
+    height: 35px;
+  }
 }

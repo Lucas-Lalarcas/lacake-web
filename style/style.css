@@ -69,7 +69,7 @@ a.active, a:hover {
   align-items: center;
   height: 380px;
   text-align: center;
-  background-image: url("https://i.imgur.com/HdUUE5J.png");
+  background-image: url(../img/background1.webp);
   background-size: cover;
 }
 
@@ -135,9 +135,9 @@ body {
   /*Estilo e posicionamento das 4 caixas marrom do site*/
   width: 50%;
   height: auto;
-  background-color: #8a7975;
+  background-color: #6d605d;
   font-size: auto;
-  color: #f6f1f3;
+  color: #ffffff;
   padding: 40px 10px;
   margin: 0 10px;
   border-radius: 2rem;
@@ -155,14 +155,14 @@ body {
 .content-box a {
   /*Define estilo do botão saiba mais*/
   text-decoration: none;
-  color: black;
+  color: rgb(56, 52, 52);
   display: block;
-  padding: 16px 32px;
+  padding: 8px 16px;
   border-radius: 2rem;
   transition: all 1500ms;
   margin: 25px 0 10px 0;
   background-color: white;
-  font-size: max(1vw, 16px);
+  font-size: 27px;
 }
 
 .content-box a:hover {
@@ -196,7 +196,7 @@ body {
   padding: 5%;
   color: white;
   border-radius: 2rem;
-  background-image: url("https://i.imgur.com/rNfWIbj.jpg");
+  background-image: url(../img/background2.webp);
   background-size: cover;
   margin: 10px 10px;
   animation-delay: 700ms;
@@ -223,20 +223,13 @@ body {
   text-decoration: none;
   padding: 16px 32px;
   border-radius: 28px;
-  transition: all 1500ms;
+  transition: all 200ms;
   margin: 25px 0 10px 0;
 }
-
-.download a:hover {
-  -webkit-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
-  box-shadow: -15px 15px 29px -17px rgba(0, 0, 0, 0.75);
-}
-
 /*Estilo e tamanho individual dos dois botoes de download*/
 
 .boleira {
-  background-color: #8a7975;
+  background-color: #6d605d;
   color: white;
 }
 
@@ -250,7 +243,8 @@ body {
 }
 
 .android:hover {
-  color: #8a7975;
+  color: #f6f1f3;
+  background-color: #312624;
 }
 
 footer {
@@ -309,7 +303,7 @@ footer {
     display: block
   }
   .top {
-    background-image: url("https://i.imgur.com/EfOz4bq.png")
+    background-image: url(../img/background.webp)
   }
   #logo {
     display: none;
