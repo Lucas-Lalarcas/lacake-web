@@ -7,16 +7,15 @@
     text-decoration: none;
     outline: 0;
     font-size: 100%;
-    
     box-sizing: border-box;
 }
 
 body {
     min-height: 100vh;
-  background-image: url(../img/abackground.webp);
- background-size: 80%;
- background-position: center;
-  justify-content: center;
+   background-image: url(../img/abackground.webp);
+   background-size: 80%;
+   background-position: center;
+    justify-content: center;
     margin: 0 auto;
     margin-bottom: 0 auto;
     font-family: PT Sans;
