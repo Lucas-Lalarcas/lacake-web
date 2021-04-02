@@ -178,6 +178,28 @@ nav {
       
       }
 
+      @media (max-width: 900px){
+
+   .content {
+          justify-content: center;
+      }
+
+      .content h2 {
+        text-align: center;
+        padding-left: 0px;
+      }
+
+      .lore {
+        width: 300%;
+    }
+   .img{
+   display: none;
+   }
+      }
+      .lore {
+        width: 300%;
+    }
+
 
 @media (max-width: 425px) {
   * {
