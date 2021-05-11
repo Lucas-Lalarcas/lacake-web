@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+
+<head>
+  <title>Configs</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styleorder.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/237930a9b2.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style/orders.css">
+
+
+</head>
+
+<body>
+
+
+  <div class="body">
+    <div class="background-block">
+      <h1 class="titlepage">Pedidos</h1>
+    </div>
+
+    <div class="content">
+      <div class="headermenu">
+        <a href="#" id="all">Todos</a>
+      <a href="#" id="going" onclick="Mudarestado('andamento')">Em Andamento</a>
+      <a href="#" id="start" onclick="Mudarestado('iniciar')">A Iniciar</a>
+      <a href="#" id="ended" onclick="Mudarestado('concluido')">Finalizados</a> </div>
+      <form id="searchbar">
+      <p><input id="search" type="search" placeholder="Pesquisar pedidos pelo CPF">
+      <button>Pesquisar</button></p>
+    </form>
+   
+
+    <div style="cursor:pointer"class="pedido" id="andamento" onclick="Mudarestado('pedidodetail')" oncontextmenu="Mudarestado('contextmenu')"><b>Pedido 06a19819</b><p>Clique para detalhes<i class="fas fa-bars"></i></p></div>
+    <div  style="display:none" class="pedido" id="andamento"><p>Pedido 06a19818</p></div>
+    <div style="display:none" class="pedido" id="andamento"><p>Pedido 06a19820</p></div>
+    <div style="display:none"  class="pedido" id="concluido"><p>Pedido 06a19819</p></div>
+    <div style="display:none" class="pedido" id="concluido"><p>Pedido 06a19818</p></div>
+    <div  style="display:none"class="pedido" id="concluido"><p>Pedido 06a19820</p></div>
+    <div  style="display:none" class="pedido" id="iniciar"><p>Pedido 06a19819</p></div>
+    <div style="display:none"class="pedido" id="iniciar"><p>Pedido 06a19818</p></div>
+    <div style="display:none"  class="pedido" id="iniciar"><p>Pedido 06a19820</p></div>
+    <div style="display:none"class="pedido" id="concluido"><p>Pedido 06a19820</p></div>
+    
+
+   
+  </div>
+    </div>
+    
+  </div>
+  <div class="header">
+    <div class="configcontainer">
+      <a href="configs.html">
+        <div class="optionconfig" id="option1">
+          <i class="fas fa-cog"></i>
+          <p>&nbsp;&nbsp;&nbsp;Configurações</p>
+        </div>
+      </a>
+      <a href="index.html">
+        <div class="optionconfig">
+          <i class="fas fa-hourglass"></i>
+          <p>&nbsp;&nbsp;&nbsp;Tela inicial</p>
+        </div>
+      </a>
+
+      <a href="orders.html">
+        <div class="optionconfig">
+          <i class="fas fa-money-check-alt"></i>
+          <p>&nbsp;&nbsp;&nbsp;Pedidos</p>
+        </div>
+      </a>
+
+      <a href="products.html">
+        <div class="optionconfig">
+          <i class="fas fa-birthday-cake"></i>
+
+
+          <p>&nbsp;&nbsp;&nbsp;Produtos</p>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="loading"></div>
+
+  <div class="borda"></div>
+
+  <div style="display:none" id="pedidodetail">
+    <div class="fundo" onclick="Mudarestado('pedidodetail')"></div>
+      <div class="caixa">
+        <div class="caixaheader">
+            <div class="caixaandamento">Pedido a6sd5.qad
+              <form style="display:inline" id="etapachange">
+              <select id="etapa">
+                <option value="iniciar">A Iniciar</option>
+                <option value="andamento" selected="selected">Andamento</option>
+                <option value="finalizar">Finalizado</option>
+              </select>
+              <input type="submit">
+            </form>
+            </div>
+            <div class="cancela" onclick="Mudarestado('pedidodetail')"><img src="img\cancel.png" ></div>
+        </div>
+        <div class="info">
+        <p>Cliente: Olivia Hye from Loona</p>
+        <p>CPF: 0218598748/96</p>
+        <p>13/03/2021 03:13</p></div>
+        <hr>
+        <div class="info">
+          <p>Pedido de Entrega</p> 
+          <p>Entrega: 20/03/2021 16:30</p>
+          <a class="buttonendereco" onclick="Mudarestado('endereco')">Ver Endereço</a></div> 
+          <hr>
+
+          <div class="title"><p>Lista de Produtos</p></div>
+          <div class="orderlist">
+            <table>
+              <tr>
+                <th>Produto</th>
+                <th>Valor 100g</th>
+                <th>Peso</th>
+                <th>Valor</th>
+              </tr>
+              <tr>
+                <td>Bolo Rosy</td>
+                <td>R$8.00</td>
+                <td>200g</td>
+                <td>R$16.00</td>
+              </tr>
+              <tr>
+                <td>Brigadeiro Rosy</td>
+                <td>R$5.00</td>
+                <td>500g</td>
+                <td>R$25.00</td>
+              </tr>
+              <tr>
+                <td>Bolo Loona</td>
+                <td>R$8.00</td>
+                <td>200g</td>
+                <td>R$16.00</td>
+              </tr>
+              <tr>
+                <td>Brigadeiro Loona</td>
+                <td>R$5.00</td>
+                <td>500g</td>
+                <td>R$25.00</td>
+              </tr>
+              <tr>
+                <td>Bolo Loona</td>
+                <td>R$8.00</td>
+                <td>200g</td>
+                <td>R$16.00</td>
+              </tr>
+              <tr>
+                <td>Brigadeiro Loona</td>
+                <td>R$5.00</td>
+                <td>500g</td>
+                <td>R$25.00</td>
+              </tr>
+              <tr>
+                <td>Brigadeiro Loona</td>
+                <td>R$5.00</td>
+                <td>500g</td>
+                <td>R$25.00</td>
+              </tr>
+              <tr>
+                <td>Bolo Loona</td>
+                <td>R$8.00</td>
+                <td>200g</td>
+                <td>R$16.00</td>
+              </tr>
+              <tr>
+                <td>Brigadeiro Loona</td>
+                <td>R$5.00</td>
+                <td>500g</td>
+                <td>R$25.00</td>
+              </tr>
+            </table>
+
+            
+          </div>
+          <hr>
+          <div class="info"><p>Valor Total: R$500.00</p> <a target="_blank" href="https://api.whatsapp.com/send?phone=5511951608181&text=Oi%20Lucas%2C%20Bom%20trabalho%20com%20este%20site!%20Melhor%20site%20do%20mundo!%20Vou%20at%C3%A9%20te%20enviar%20um%20PIX!" id="chat"><p>Chat com a Cliente</p></a></div>
+        </div>
+        <div style="display:none" id="endereco">
+          
+          <div class="caixaendereco">
+            <div class="caixaheadere">
+              <p class="titlead"> Endereço</p>
+              <div class="cancela" onclick="Mudarestado('endereco')"><img src="img\cancel.png" ></div>
+            </div>
+           <div class="infoe"><p><b>CEP</b> 06622180</p> <p><b>ESTADO:</b> SP</p> </div>
+           <div class="infoe"> <p> <b>Cidade: </b>Jandira</p></div>
+           <div class="infoe"> <p> <b>Logradouro: </b>Avenida Ancião Sebastião Antonine</p></div>
+           <div class="infoe"> <p> <b>Bairro: </b>Jardim das Margaridas</p></div>
+           <div class="infoe"> <p> <b>Número: </b>61</p> <p><b>Complemento: </b>Apto 24 Bloco 28</p></div>
+           <div class="infoe"> <p> <b>Referência: </b>Condomínio Vale Verde</p></div>
+           <div class="infoe"><a target="_blank" style="text-decoration: underline; text-align:center" href="https://goo.gl/maps/bynR4paGjaaAagvG7"> Ir para o Google Maps</a></div>
+            
+        </div>
+      </div>
+     
+    </div>
+
+   
+  
+  <script src="node_modules\angular\angular.js"></script>
+  <script>
+    function Mudarestado(el) {
+      var display = document.getElementById(el).style.display;
+      if (display == "none")
+        document.getElementById(el).style.display = 'flex';
+      else
+        document.getElementById(el).style.display = 'none';
+    }
+
+
+  </script>
+  
+</body>
+
+

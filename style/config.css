@@ -1,0 +1,157 @@
+.header
+{
+    width:100vw;
+    height:6.5vh;
+     background-color:#181818;
+     -webkit-box-shadow: 0px 31px 13px 0px rgba(0,0,0,0.31);
+     -moz-box-shadow: 0px 31px 13px 0px rgba(0,0,0,0.31);
+     box-shadow: 0px 31px 13px 0px rgba(0,0,0,0.31);}
+
+*, html, body 
+{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+    overflow-x: hidden;
+    font-family:roboto;
+}
+
+body{overflow-y:hidden}
+
+#profile {margin-top:2vh;}
+
+.body{display:flex; text-align:center; width:100vw; height:93.5vh;background-image:url(../img/backgroundconfigs1.webp); background-size:cover; z-index: 3;}
+
+.background-block{ width:50vw; height:100%; background-size:auto; background-repeat:no-repeat; display:flex; align-items:center; justify-content:center;}
+
+.content{height:93vh;background:#f5f5f5;width:50vw; text-align:center;border-radius:10vh 0 0 10vh; animation-name:animacao; animation-duration: 2s}
+
+ .line {width:25vw;}
+
+.configcontainer{display:flex; height:6.5vh; width:100vw; align-items:center; justify-content:center;}
+
+.title {height:4vh;}
+
+.optionconfig {width:25vw; display:flex; height:6.5vh; justify-content:center; align-items:center; color:white; transition:.3s;}
+
+.optionconfig:hover{background-color:#cc0000}
+.configcontainer p {font-size:1.2rem; font-family:roboto;}
+
+i{font-size:1.5rem;}
+
+a{text-decoration:none;}
+ 
+
+
+
+.titlepage {color:white; padding:5vw; background-color:#00000052; border-radius:2vw; animation-name:animacao2; animation-duration: 4s;}
+
+.footer { bottom:0; width:50vw; height:10vh; background-color:pink}
+
+
+.headercontent{width:100%; border-bottom:1px solid #272626; font-weight:600; font-size:1.5rem; color:#641515; padding:1vw 0; text-align:center; margin-bottom:4vh;}
+
+p{padding-bottom:1vh;}
+
+input, textarea{background-color:#f1efef}
+
+.inputstyle{resize:none; border-radius:1vh; padding:1vh; width:20vw; margin:1vh 0}
+
+#editCEP {padding:1vh; border-radius:1vh; text-align:center;}
+
+#ceptext a {font-size:0.8rem; text-decoration:underline}
+
+#editnum, #editcomplemento, #edituf {padding:1vh; border-radius:1vh; background-color:#f1efef }
+
+.complnum {width:20vw; display:flex; justify-content:space-between; align-items:center; margin-bottom:2vh; margin:0 auto}
+
+
+header {height:6vh; width:100%; display:flex; align-items:center; justify-content:center;}
+
+@keyframes animacao { from{animation-delay:1s;opacity:0; margin-left: 20vw} to {opacity:100; margin-left:0}}
+
+@keyframes animacao2 { from{opacity:0; translateX:-10vw} to {opacity:100; translateX:0}}
+
+@keyframes animacao3 {from{opacity:0; translateX:10vw} to {opacity:100; translateX:0}}
+
+
+
+.editcontent{ width:20vw; margin-top:5vh; text-align:center; animation-name:animacao3; animation-duration:4s}
+
+.round {width:50vw; height:6vh; background-color:#9e3e3e ;border-radius:20vh 20vh 0 0}
+
+.cep{justify-content:space-between;align-items:center; width:20vw; display:flex; margin:1vh auto}
+
+
+hr {width: 20vw; margin:0 auto}
+input[type="submit"], input[type="reset"] {width:8vw; padding:0.5vw;border-radius:0.5vw; }
+input[type="reset"]:hover{background-color:#cc0000; color:white; transition:.5s}
+input[type="submit"]:hover{background-color:#00cc00; color:white; transition:.5s}
+
+.button{margin:0 auto; width:20vw; height:7vh; display:flex; align-items:center; justify-content:space-between;}
+
+.loading {animation-name:loading; animation-duration:2s;height:0.5vh; width:20vw; background-color:red; position:absolute; top:99.5vh; opacity:0}
+
+.borda { width:100vw; background-color:#cc0000; position:absolute; top:93vh; height:0.5vh; -webkit-box-shadow: 0px 0px 17px 18px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 17px 18px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 17px 18px rgba(0,0,0,0.21);
+    }
+
+@keyframes loading { from{opacity:0; right:100vw} to {right:-20vw; opacity:100} from{opacity:0; right:100vw}}
+
+
+#fundo{width:100vw; height:100vh; position:absolute; top:0; background:rgba(0,0,0,0.8)}
+#mostrarDiv {display:flex; align-items:center; justify-content:center;}
+.Teste {width:20vw; height:40vh; background-color:white; position:absolute; left:40vw; top:30vh; border-radius:3vw;}
+.perfil, .endereco {background-color:rgb(236, 236, 236); margin:4vh auto 1vh auto; width:25vw; padding:5vh; border-radius:3vh; animation-name:animacao2; animation-duration:2s}
+
+
+@media (max-width:600px) 
+{
+    .optionconfig p {display:none;}
+
+    .background-block{width:100vw; height:20vh;}
+    .content {width:100vw;height:73.5vh; border-radius:5vh 5vh 0 0; animation-name:animacao4; animation-direction:initial;}
+    .complnum {width: 95vw;}
+    .editcontent {width:95vw}
+
+    .body {display:block}
+
+    @keyframes animacao4 { from{opacity:0} to {opacity:100}}
+
+    .inputstyle {width: 95vw}
+
+    .cep {width:95vw}
+
+    .button{width:95vw}
+
+    input[type="submit"], input[type="reset"] {width:40vw; padding:1vw;border-radius:2vw; }
+
+    .perfil, .endereco {background-color:rgb(236, 236, 236); margin:4vh auto 1vh auto; width:80vw; border-radius:3vh; animation-name:animacao2; animation-duration:2s}
+
+   .pedido{width: 80vw}
+}
+
+
+h3 {padding:1vh; background-color:#f3c2c2; color:#641515; display:block; border-radius:2vh; margin-bottom:3vh;}
+
+
+
+@media (min-width:601px){
+  ::-webkit-scrollbar {
+      width: 0.5vw;
+      height: 10px;
+     }
+     ::-webkit-scrollbar-thumb {
+      background: #cc0000;
+      border-radius: 10px;
+     }
+     ::-webkit-scrollbar-thumb:hover{
+      background: #b30404;
+     }
+     ::-webkit-scrollbar-track{
+      background: #ffffff;
+      border-radius: 10px;
+     }}
+
+
