@@ -1,5 +1,10 @@
-# lacake-web
-Site do Sistema de Encomenda de Bolos LaCake (TCC)
+# LaCake (WEB)
 
+## Descrição do Projeto
 
-Durante o desenvolvimento do TCC Lacake da FIEB eu tive o papel de fazer o frontend do sistema web
+O LaCake é um site desenvolvido como parte do projeto de conclusão do curso técnico de informática. Construído utilizando HTML e CSS.
+
+## Tecnologias Utilizadas
+
+- HTML (Linguagem de Marcação)
+- CSS (Folhas de Estilo em Cascata)
